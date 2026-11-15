@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergamino Interactivo</title>
+    <!-- Tailwind CSS para diseño moderno y utilidades -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css_simbolos/himno.css">
+    <link rel="stylesheet" href="css_simbolos/audios.css">
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col items-center justify-center p-4">
+
+    <header class="text-center mb-6">
+        <h1 class="text-3xl font-bold tracking-wide text-amber-400">Himno del Municipio</h1>
+
+        <audio id="audioFondo" src="Himno/Himno de Rubio.mp3" preload="auto" loop></audio>
+        <button id="btnAudio" class="audio-control" aria-label="Controlar audio">
+            <svg id="iconoSonido" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            <svg id="iconoMudo" class="oculto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+        </button>
+    </header>
+
+    <div class="text-center mb-6">
+        <p class="text-sm text-amber-300 font-semibold mt-1">"¡SALVE OH RUBIO!"</p>
+        <p class="text-xs text-slate-300 mt-1">Letra: R.P.FR. Campo Elías Claro, <br>Música: Profesor Rufo Pérez Salomón.</p>
+    </div>
+
+    <!-- Bloque único del Pergamino -->
+    <div class="pergamino-container">
+        <div class="pergamino-texto" contenteditable="true">
+<strong>CORO</strong>
+¡Salve oh Rubio! Ciudad del Trabajo
+Noble sede del patrio ideal;
+tu destino es por siempre la gloria
+que conquistas en rudo lidiar.
+
+<strong>I</strong>
+Hoy te yergues ceñida de lauros
+constelada de luz y de fe,
+despertando los dulces recuerdos,
+que atesora tu fúlgido ayer.
+
+<strong>II</strong>
+Tu memoria se embriaga evocando,
+a despecho del tiempo veloz,
+al insigne patricio que un día
+sus blasones y bienes te dio.
+
+<strong>III</strong>
+No en vano surgiste al progreso
+bajo el signo feliz de la Cruz,
+pues tu fe con el tiempo aquilatas,
+ascendiendo por rutas de luz.
+
+<strong>IV</strong>
+¡Oh Ciudad que enalteces tu nombre
+en faenas de gloria y honor,
+no se eclipse jamás en tu cielo
+de tu estrella propicia el fulgor!
+
+<strong>V</strong>
+¡Magnifique la Historia tus obras,
+y perdure en el bronce inmortal
+el prestigio que brinda la fama
+a tu anhelo de siempre triunfar!
+
+<strong>VI</strong>
+¡Que el Eterno prospere tus campos;
+que difunda su lumbre estelar,
+sobre el pueblo que labra su gloria
+en las lides de la libertad!
+        </div>
+    </div>
+
+    <script src="js_simbolos/audios.js"></script>
+</body>
+</html>

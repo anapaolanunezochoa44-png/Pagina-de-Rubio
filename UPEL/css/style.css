@@ -1,0 +1,130 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;500;600;700&display=swap');
+
+.font-handwritten {
+    font-family: 'Caveat', cursive;
+}
+.font-display {
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Fondo degradado estilo UPEL */
+.upel-gradient-bg {
+    background: linear-gradient(135deg, #020b1f 0%, #003876 25%, #0a658d 45%, #3b9ca7 65%, #8db08b 80%, #f2cc68 100%) !important;
+    background-attachment: fixed;
+}
+
+/* EFECTO DE VOLTEO 3D (FLIP CARD) */
+.card-container {
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+/* Voltea al pasar el cursor o si tiene la clase activa en móviles */
+.card-container:hover .card-inner,
+.card-container.is-flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-front {
+    z-index: 2;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background-color: #0f172a;
+}
+
+/* Estilo de doble borde cian adaptado al contenedor */
+.sketch-double-cyan {
+    border: 2px solid #06b6d4;
+    outline: 2px solid #06b6d4;
+    outline-offset: 3px;
+    box-shadow: 4px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Asegurar espacio para los bloques de aspectos importantes abajo */
+main {
+    min-height: 750px !important;
+    padding-bottom: 230px !important;
+}
+
+/* ================================================= */
+/* ESTILOS RESPONSIVOS PARA MÓVIL: VISTA DE LISTA    */
+/* ================================================= */
+@media (max-width: 768px) {
+    /* Ocultamos las líneas de conexión SVG del mapa mental en el tlf */
+    main > svg.absolute {
+        display: none !important;
+    }
+
+    /* Convertimos el contenedor principal en una columna vertical ordenada */
+    main {
+        position: relative !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        min-height: auto !important;
+        padding-top: 20px !important;
+        padding-bottom: 50px !important;
+        gap: 20px !important;
+    }
+
+    /* Ajustamos el núcleo central (La ENRI) para que quede arriba ordenado */
+    main > div.absolute.top-\[45\%\] {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        margin-bottom: 10px !important;
+        z-index: 40 !important;
+    }
+
+    /* Transformamos cada tarjeta absoluta en un bloque flexible secuencial */
+    .card-container {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: 90% !important;
+        max-width: 340px !important;
+        height: 200px !important;
+        transform: none !important; /* Le quitamos las rotaciones para que se vea alineado */
+        margin: 0 auto !important;
+    }
+
+    /* Contenedor de los aspectos importantes abajo en modo lista */
+    main > div.absolute.bottom-\[-380px\] {
+        position: relative !important;
+        bottom: auto !important;
+        left: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        margin-top: 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    /* Espaciado del footer en móvil para que no se pise con nada */
+    footer {
+        margin-top: 30px !important;
+    }
+}

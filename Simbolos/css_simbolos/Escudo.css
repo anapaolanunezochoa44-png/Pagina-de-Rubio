@@ -1,0 +1,39 @@
+/* Contenedor principal: Altura de 750px en computadoras y adaptable en móviles */
+        .escudo-container {
+            position: relative;
+            width: 100%;
+            max-width: 650px;
+            height: 550px; /* Se ajusta de forma proporcional en pantallas grandes mediante media queries */
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .escudo-container {
+                height: 750px;
+                max-width: 700px;
+            }
+        }
+
+        /* Clases base para las piezas interactivas del escudo */
+        .pieza-escudo {
+            position: absolute;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            cursor: pointer;
+        }
+
+        .pieza-escudo:hover {
+            transform: scale(1.08);
+            filter: brightness(1.05);
+            z-index: 50;
+        }
+
+        /* Estilo para los elementos informativos simples (sin modal) */
+        .pieza-simple {
+            position: absolute;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .pieza-simple:hover {
+            transform: scale(1.05);
+            z-index: 40;
+        }

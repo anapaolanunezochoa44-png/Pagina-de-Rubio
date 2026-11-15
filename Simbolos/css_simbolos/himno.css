@@ -1,0 +1,50 @@
+/* Contenedor principal del pergamino único y expandible */
+.pergamino-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px; /* Ancho perfecto para el pergamino */
+    margin: 40px auto;
+    
+    /* Usamos la imagen completa de fondo una sola vez */
+    background-image: url('../Himno/Himn.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Estira la imagen exacta desde el cilindro de arriba hasta el de abajo */
+    
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+/* Área de escritura ubicada exactamente en el centro del pergamino */
+.pergamino-texto {
+    position: relative;
+    width: 78%; /* Ancho para que el texto no toque los bordes rotos del papel */
+    
+    /* Márgenes superior e inferior generosos para que el texto quede 
+       exactamente entre el cilindro de madera de arriba y el de abajo */
+    padding-top: 110px; 
+    padding-bottom: 110px;
+    padding-left: 4%;
+    padding-right: 4%;
+    
+    /* Estilos de tipografía clásica */
+    font-family: 'Georgia', serif;
+    color: #2c1d0c;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: center;
+    
+    outline: none;
+    white-space: pre-wrap; /* Respeta los saltos de línea del himno */
+}
+
+/* Estilo al hacer clic para editar el texto */
+.pergamino-texto:focus {
+    background-color: rgba(255, 248, 220, 0.12);
+    border-radius: 4px;
+}
+
+h1{
+    text-align: center;
+    color: crimson;
+}
