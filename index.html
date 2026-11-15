@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubio una tierra inolvidable</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="audios.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <span><i class="fa-solid fa-location-dot"></i> Bienvenido a la Ciudad Pontalida - Rubio, Estado Táchira</span>
+  </div>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <h2>Rubio <span>Inolvidable</span></h2>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Lugares</a>
+        <a href="#destacados">Patrimonio</a>
+        <a href="#experiencias">Municipio Junín</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <!--<div class="nav-actions">
+        <button class="icon-btn" id="favsBtn" title="Lugares Favoritos">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge" id="favBadge">0</span>
+        </button>-->
+        <!-- BOTÓN DE RUTA / ITINERARIO OCULTADO TEMPORALMENTE -->
+        <!-- 
+        <button class="icon-btn" id="cartBtn" title="Experiencias Guardadas">
+          <i class="fa-solid fa-compass"></i>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+        -->
+      </div>
+    </div>
+
+    <audio id="audioFondo" src="audio/Rubio_es_una_tierra_inlvidable.mp3" preload="auto" loop></audio>
+
+        <button id="btnAudio" class="audio-control" aria-label="Controlar audio">
+            <svg id="iconoSonido" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            <svg id="iconoMudo" class="oculto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+        </button>
+  </header>
+
+  <section id="inicio" class="hero-section">
+    <div class="hero-overlay"></div>
+    <img src="imagenes_inicio/imagen principal.jpeg" alt="Iglesia Santa Bárbara de Rubio" class="hero-bg">
+    <div class="hero-content">
+      <span class="hero-subtitle">Tierra de Café, Puentes y Tradición</span>
+      <h1>Rubio una tierra inolvidable</h1>
+      <p>Descubre los rincones históricos, monumentos arquitectónicos, la calidez de nuestra gente y la exuberante naturaleza de la Ciudad Pontificia.</p>
+      <div class="hero-buttons">
+        <a href="#destacados" class="btn btn-primary">Explorar Sitios</a>
+        <a href="#categorias" class="btn btn-outline">Ver Categorías</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-bar">
+    <div class="feature-item">
+      <i class="fa-solid fa-church"></i>
+      <div>
+        <h4>Arquitectura Única</h4>
+        <p>Igleisa Santa Bárbara y Puentes Metálicos</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <i class="fa-solid fa-mug-hot"></i>
+      <div>
+        <h4>Tradición Cafetera</h4>
+        <p>Cuna del mejor café andino</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <i class="fa-solid fa-tree"></i>
+      <div>
+        <h4>Naturaleza e Historia</h4>
+        <p>Parque La Petrolia y PN El Tamá</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <div>
+        <h4>Cultura y Educación</h4>
+        <p>Patrimonio de la UPEL Rubio</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="categorias" class="section">
+    <div class="section-header">
+      <h2>Explora por Categoría</h2>
+      <p>Selecciona una categoría para filtrar los atractivos turísticos de Rubio</p>
+    </div>
+
+    <div class="categories-grid">
+      <button class="category-card active" data-filter="all">
+        <div class="cat-img-wrapper">
+          <img src="imagenes_inicio/corredores.jpg" alt="Todos">
+        </div>
+        <span>Todos los Lugares</span>
+      </button>
+
+      <button class="category-card" data-filter="arquitectura">
+        <div class="cat-img-wrapper">
+          <img src="imagenes_inicio/imagen principal.jpeg" alt="Arquitectura Religiosa">
+        </div>
+        <span>Arquitectura Religiosa</span>
+      </button>
+
+      <button class="category-card" data-filter="cafe">
+        <div class="cat-img-wrapper">
+          <img src="imagenes_inicio/cafe.jpg" alt="Tradición Cafetera">
+        </div>
+        <span>Tradición Cafetera</span>
+      </button>
+
+      <button class="category-card" data-filter="petrolia">
+        <div class="cat-img-wrapper">
+          <img src="imagenes_inicio/petrolia.jpg" alt="Compañía Petrolera">
+        </div>
+        <span>Compañía Petrolera</span>
+      </button>
+
+      <button class="category-card" data-filter="educacion">
+        <div class="cat-img-wrapper">
+          <img src="imagenes_inicio/upel.jpg" alt="UPEL Rubio">
+        </div>
+        <span>Educación y Cultura</span>
+      </button>
+
+      <button class="category-card" data-filter="urbano">
+        <div class="cat-img-wrapper">
+          <img src="imagenes_inicio/Puente Junín frente 1.jpeg" alt="Ciudad Pontalida">
+        </div>
+        <span>Ciudad Pontalida</span>
+      </button>
+    </div>
+  </section>
+
+<section class="patrimonio-destacado" id="destacados">
+  <div class="section-header">
+    <h2>Patrimonio Destacado</h2>
+    <p style="color:darkkhaki;">Conoce los lugares más emblemáticos que hacen a Rubio una tierra inolvidable</p>
+  </div>
+
+  <div class="cards-grid" id="patrimonioGrid">
+    
+    <article class="card" data-category="arquitectura">
+      <div class="card-header">
+        <span class="tag">Arquitectura Religiosa</span>
+        <img src="imagenes_inicio/imagen principal.jpeg" alt="Iglesia Santa Bárbara">
+      </div>
+      <div class="card-body">
+        <h3>Iglesia Santa Bárbara</h3>
+        <p>Emblemática joya neogótica con imponentes torres de ladrillo rojo que caracterizan la silueta urbana de Rubio.</p>
+      </div>
+      <div class="card-footer">
+        <a href="Iglesia/Iglesia.html" class="btn-detalles">Ver Detalles</a>
+      </div>
+    </article>
+
+    <article class="card" data-category="cafe">
+      <div class="card-header">
+        <span class="tag">Patrimonio Histórico</span>
+        <img src="imagenes_inicio/cafe.jpg" alt="Los Corredores y el Café">
+      </div>
+      <div class="card-body">
+        <h3>Tradición Cafetera</h3>
+        <p>Galerías coloniales y haciendas históricas que convirtieron a Rubio en la cuna de la producción del café andino.</p>
+      </div>
+      <div class="card-footer">
+        <a href="CAFE/canva_brainstorming_dashboard.html" class="btn-detalles">Ver Detalles</a>
+      </div>
+    </article>
+
+    <article class="card" data-category="petrolia">
+      <div class="card-header">
+        <span class="tag">Reserva Natural e Histórica</span>
+        <img src="imagenes_inicio/petrolia.jpg" alt="La Petrolia">
+      </div>
+      <div class="card-body">
+        <h3>Compañía Petrolera (La Petrolia)</h3>
+        <p>Cuna de la industria petrolera venezolana, rodeada por la frondosa vegetación del Parque Nacional El Tamá.</p>
+      </div>
+      <div class="card-footer">
+        <a href="CMPT/historia_petrolea.html" class="btn-detalles">Ver Detalles</a>
+      </div>
+    </article>
+
+    <article class="card" data-category="educacion">
+      <div class="card-header">
+        <span class="tag">Patrimonio Educativo</span>
+        <img src="imagenes_inicio/upel.jpg" alt="UPEL Gervasio Rubio">
+      </div>
+      <div class="card-body">
+        <h3>UPEL Gervasio Rubio</h3>
+        <p>Histórico pedagógico rural que ha formado a generaciones de educadores para todo el país.</p>
+      </div>
+      <div class="card-footer">
+        <a href="UPEL/index.html" class="btn-detalles">Ver Detalles</a>
+      </div>
+    </article>
+
+    <article class="card" data-category="urbano">
+      <div class="card-header">
+        <span class="tag">Patrimonio Urbano</span>
+        <img src="imagenes_inicio/Puente Junín frente 1.jpeg" alt="Puentes de Rubio">
+      </div>
+      <div class="card-body">
+        <h3>Ciudad Pontalida</h3>
+        <p>Estructuras icónicas y puentes históricos que conectan a Rubio y le otorgan su célebre título de Ciudad Pontálida.</p>
+      </div>
+      <div class="card-footer">
+        <a href="puentes/historia_puentes.html" class="btn-detalles">Ver Detalles</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+  <section id="experiencias" class="promo-banner">
+    <div class="promo-content">
+      <span class="tag">Municipio Junín</span>
+      <h2>Conozcamos acerca de lo más relevantes de este lugar</h2>
+      <a href="Municipio Junin/municipio_junin.html"class="btn-detalles">Junín</a>
+    </div>
+  </section>
+
+  <footer id="contacto" class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <a href="#" class="footer-logo">Rubio <span>Inolvidable</span></a>
+        <p>Iniciativa dedicada a la preservación, difusión y orgullo del patrimonio cultural, natural e histórico de Rubio, Municipio Junín, Estado Táchira.</p>
+        <div class="social-links">
+    <a href="https://www.instagram.com/cronicas_junin_2.0?obrf=ZGdvMGZ5dHlwN3A3" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@crnicasjunn2.0?_r=1&_t=ZS-9BPjWkSIUlz" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+</div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#categorias">Categorías</a></li>
+          <li><a href="#destacados">Sitios Históricos</a></li>
+          <li><a href="#experiencias">Ruta Turística</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Lugares de Interés</h4>
+        <ul>
+          <li><a href="#">Iglesia Santa Bárbara</a></li>
+          <li><a href="#">Los Corredores de Rubio</a></li>
+          <li><a href="#">Parque La Petrolia</a></li>
+          <li><a href="#">UPEL Gervasio Rubio</a></li>
+        </ul>
+      </div>
+
+      
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Rubio una tierra inolvidable. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+
+  <div class="modal" id="detailsModal">
+    <div class="modal-content">
+      <button class="close-modal" id="closeModal">&times;</button>
+      <div class="modal-body" id="modalBody">
+      </div>
+    </div>
+  </div>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="drawer" id="cartDrawer">
+    <div class="drawer-header">
+      <h3><i class="fa-solid fa-compass"></i> Mi Itinerario de Visita</h3>
+      <button class="close-drawer" id="closeDrawer">&times;</button>
+    </div>
+    <div class="drawer-body" id="cartItems">
+      <p class="empty-msg">No has guardado experiencias o lugares aún.</p>
+    </div>
+    <div class="drawer-footer">
+      <button class="btn btn-primary full-width" onclick="alert('¡Itinerario listo para tu próxima visita a Rubio!')">Confirmar Mi Ruta</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="audios.js"></script>
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (
+            e.key === 'F12' ||
+            (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+            (e.ctrlKey && e.key === 'U')
+        ) {
+            e.preventDefault();
+            return false;
+        }
+    });
+</script>
+</body>
+</html>
