@@ -1,0 +1,107 @@
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Evita barras laterales molestas */
+}
+
+.carousel-container {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 550px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1500px; /* <--- Aumenta la perspectiva (antes 1200px) para suavizar la profundidad 3D */
+}
+
+.carousel-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 210px;  /* <--- Puedes reducir ligeramente el ancho (antes 240px) para que no choquen tanto */
+    height: 300px; /* <--- Y ajustar la altura proporcionalmente (antes 330px) */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    background: #000;
+}
+
+.carousel-item img, 
+.carousel-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html, 
+body {
+    display: grid;
+    height: 100%;
+}
+
+body {
+    background: #fff3ed;
+}
+
+/* Estilos para el botón flotante de audio */
+.audio-control {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff3ed;
+    transition: background 0.3s ease, transform 0.2s ease;
+    backdrop-filter: blur(5px);
+}
+
+.audio-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+}
+
+.audio-control svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Clase utilitaria para ocultar el ícono inactivo */
+.oculto {
+    display: none !important;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centra la imagen horizontalmente */
+    justify-content: center; /* Centra la imagen verticalmente si el header tiene altura */
+    width: 100%;
+    padding: 20px 0;         /* Un respiro arriba y abajo */
+    box-sizing: border-box;
+}
+
+header img {
+    max-width: 300px;        /* Ajusta este valor según el tamaño que quieras que tenga (ej. 150px, 250px) */
+    height: auto;            /* Mantiene la proporción original para que no se deforme */
+    display: block;
+}

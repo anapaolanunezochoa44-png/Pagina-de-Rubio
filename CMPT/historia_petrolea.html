@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Petrolera</title>
+    <link rel="stylesheet" href="Css_petrolia/historia_petrolea.css">
+    <link rel="stylesheet" href="Css_petrolia/dato_curioso_petrolea.css">
+    <link rel="stylesheet" href="Css_petrolia/carrusel.css">
+    <link rel="stylesheet" href="Css_petrolia/style.css">
+</head>
+<body>
+  <header>
+    <img src="petrolia/1875__1_-removebg-preview.png">
+
+<!-- Etiqueta de audio oculta con reproducción en bucle (loop) -->
+<audio id="audioFondo" src="Audios_petrolia/Audio_petrolea.mp3" preload="auto" loop></audio>
+
+<!-- Botón interactivo flotante para silenciar o reproducir -->
+<button id="btnAudio" class="audio-control" aria-label="Controlar audio">
+    <!-- Ícono de encendido (sonido) -->
+    <svg id="iconoSonido" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+    <!-- Ícono de mudo -->
+    <svg id="iconoMudo" class="oculto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+</button>
+  </header>
+
+<div class="scene">
+  <div class="a3d" style="--n:10">
+
+    <img class="card" src="petrolia/Area recreativa la Petrolia.png" style="--i:0" 
+      alt="jellyfish">
+    <img class="card" src="petrolia/Editarr.jpg" style="--i:1" 
+      alt="jellyfish">
+    <img class="card" src="petrolia/fundadores.jpg" style="--i:2" 
+      alt="jellyfish">
+    <img class="card" src="petrolia/Minera-Petrolia.jpg" style="--i:3" 
+      alt="jellyfish">
+    <img class="card" src="petrolia/petrolia-del-tachira.jpg" style="--i:4" 
+      alt="jellyfish">
+    <img class="card" src="petrolia/Dato curioso.jfif" style="--i:5" 
+      alt="jellyfish">
+    <img class="card" src="petrolia/images (1).jfif" style="--i:6" 
+      alt="jellyfish">
+    <img class="card" src="petrolia/images (3).jfif" style="--i:7" 
+      alt="jellyfish">
+    <img class="card" src="petrolia/images.jfif" style="--i:8" 
+      alt="jellyfish">
+    <img class="card" src="petrolia/moneda.jfif" style="--i:9" 
+      alt="jellyfish">
+  </div>
+</div>
+
+<div class="dato-curioso-box">
+<p>La Compañia Minera Petrolea del Táchira, marco un antes y después en la historia, no solo de éste municipio,
+   sino de toda una nación, dando inicio a la Era Petrolera del país.</p>
+
+</div>
+
+<div class="dato-curioso-box">
+  <h3> Dato Curioso</h3>
+  <p>Los Rubienses fueron pioneros en este tipo de industria a nivel Nacional, llegando a generar en esa época diversos productos, como lo fue el gasoil, la gasolina, el kerosen y 220 galones de residuos de petróleo.</p>
+</div>
+
+<div class="fundadores-seccion-centrada">
+  <div class="tarjeta-flip">
+    <div class="tarjeta-flip-inner">
+      
+      <div class="tarjeta-cara tarjeta-frente">
+        <img src="petrolia/fundadores.jpg" alt="Pioneros de la Petrolea">
+        <h4>¿Quiénes la Crearon?</h4>
+        <span class="instruccion-giro">(Pasa el cursor por encima para ver las acciones de los fundadores)</span>
+      </div>
+
+      <div class="tarjeta-cara tarjeta-atras">
+        <h3>Fundadores y Acciones</h3>
+        <p>Se crearon 906 acciones en total, las cuales fueron divididas de la siguiente forma:</p>
+        
+        <ul class="acciones-tabla-moderna">
+          <li><span>José Antonio Valdoz</span> <span>225 acc.</span></li>
+          <li><span>José Gregorio Villa Páez</span> <span>231.5 acc.</span></li>
+          <li><span>Manuel Antonio Pulido</span> <span>192 acc.</span></li>
+          <li><span>Carlos González Bona</span> <span>30 acc.</span></li>
+          <li><span>Pedro Rafael Rincón</span> <span>92 acc.</span></li>
+          <li><span>Ramón María Maldonado</span> <span>95.5 acc.</span></li>
+          <li><span>Gobierno Nacional</span> <span>40 acc.</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</div>
+  <div class="timeline-container">
+
+  <div class="timeline-buttons-column">
+    
+    <div class="timeline-item" onclick="showTimelineContent('content-1', this)">
+      <div class="year-button">1870</div>
+      <div class="year-subtitle">La Visita de un Ingeniero</div>
+    </div>
+
+    <div class="timeline-item" onclick="showTimelineContent('content-2', this)">
+      <div class="year-button">1875</div>
+      <div class="year-subtitle">El día que la Tierra Escupió Negro</div>
+    </div>
+
+    <div class="timeline-item" onclick="showTimelineContent('content-3', this)">
+      <div class="year-button">1878</div>
+      <div class="year-subtitle">Una Confusión</div>
+    </div>
+
+  </div>
+
+  <div class="timeline-content-column">
+    
+    <div id="content-1" class="info-card">
+      <div class="card-red-line"></div>
+      <h3 class="card-title">1870: La Visita de un Médico</h3>
+      <p>El Médico Ingeniero doctor Carlos Gonzalez Bona realizaba recorridos para visitar pacientes en diversas zonas del municipio; pero le llamó la atención al pasar por la hacienda "La Alquitrana" que en la quebrada se observaba un líquido negro, viscoso y aceitoso.</p>
+      <p>Por lo que realizó una propuesta a Don Manuel Antonio Pulido Pulido, quien era dueño de este lugar, para que investigara qué tipo de químico era el que se observaba.</p>
+    </div>
+
+    <div id="content-2" class="info-card">
+      <div class="card-red-line"></div>
+      <h3 class="card-title">1875: El día que la Tierra Escupió Negro</h3>
+      <p>Ocurre el 18 de mayo de este año un fuerte temblor, con epicentro en la ciudad de Cúcuta, que causó diversos estragos tanto en Colombia como en el vecino país Venezuela. La Alquitrana fue una de las zonas afectadas, ya que se abrieron grietas enormes de las que empezó a surgir petróleo.</p>
+      <p>Y eran tantas las cantidades de este material natural que iniciaron a salir, que un campesino asustado le dijo a Don Manuel Antonio Pulido Pulido: "El día que la tierra está escupiendo negro".</p>
+    </div>
+
+    <div id="content-3" class="info-card">
+      <div class="card-red-line"></div>
+      <h3 class="card-title">1878: Una Confusión</h3>
+      <p>Se fundo la Compañía Privada: "Compañía Hullera del Táchira", y sí no leiste mal, al inicio pensarón en ese entonces que lo que apareció, era un mineral llamado "Hulla" que es un tipo de carbon mineral. Y no fue hasta que más tarde se dieron cuenta que en realidad era Petróleo.</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="timeline-container">
+  <div class="timeline-buttons-column">
+    
+    <div class="timeline-item" onclick="showTimelineContent('content-4', this)">
+      <div class="year-button">1879</div>
+      <div class="year-subtitle">El Viaje de un Rubiense</div>
+    </div>
+
+    <div class="timeline-item" onclick="showTimelineContent('content-5', this)">
+      <div class="year-button">1880</div>
+      <div class="year-subtitle">La llegada de la Maquinaria</div>
+    </div>
+
+    <div class="timeline-item" onclick="showTimelineContent('content-6', this)">
+      <div class="year-button">1881</div>
+      <div class="year-subtitle">Una Gran Falla</div>
+    </div>
+
+  </div>
+
+  <div class="timeline-content-column">
+
+    <div id="content-4" class="info-card">
+      <div class="card-red-line"></div>
+      <h3 class="card-title">1879: El Viaje de un Rubiense</h3>
+      <p>Pedro Rafael Rincones viaja a Estados Unidos, con el fin de capacitarse en el tema petrolero, ya que para ese entonces ese país ya tenía esperiencia en este ambito convirtiendose en el primer técnico.
+         Además, adquiere la primera carga (refiere al termino de perforador), muy artesanal para la epoca.</p>
+    </div>
+
+    <div id="content-5" class="info-card">
+      <div class="card-red-line"></div>
+      <h3 class="card-title">1880: La llegada de la Maquinaria</h3>
+      <p>Llega al puerto del Lago de Maracaibo, lo que era el primer taladro, pero trasnportarlos a estás montañas fue toda una travesía, debido a que toco traer desarmado en las piezas que lo componen, a lomo de mulas y bueyes.</p>
+    </div>
+
+    <div id="content-6" class="info-card">
+      <div class="card-red-line"></div>
+      <h3 class="card-title">1881: Una Gran Falla</h3>
+      <p>Se dió inicio, a la primera perforación de un pozo petrolifero, pero está misión se suspende debido a que el taladro se rompio.</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="timeline-container">
+  <div class="timeline-buttons-column">
+  
+    <div class="timeline-item" onclick="showTimelineContent('content-7', this)">
+      <div class="year-button">1883</div>
+      <div class="year-subtitle">El año más importante</div>
+    </div>
+
+    <div class="timeline-item" onclick="showTimelineContent('content-8', this)">
+      <div class="year-button">1884</div>
+      <div class="year-subtitle">La Firma</div>
+    </div>
+
+    <div class="timeline-item" onclick="showTimelineContent('content-9', this)">
+      <div class="year-button">1930</div>
+      <div class="year-subtitle">Vence La Concepción</div>
+    </div>
+
+  </div>
+
+  <div class="timeline-content-column">
+    
+    <div id="content-7" class="info-card">
+      <div class="card-red-line"></div>
+      <h3 class="card-title">1883: El año más importante</h3>
+      <p>Durante este año, ocurrieron 3 momentos cruciales para esta Compañía:</p>
+      
+      <div class="sub-cards-container">
+        
+        <div class="sub-card">
+          <h4>Marzo de 1883: Aparecen los Pozos</h4>
+          <p>Son abierto en su totalidad la cantidad de 5 pozos, siendo los principales el pozo Eureka 
+          (el primero), y el Salvador. Además, que llegaron a producir, para este entonces, la cantidad de 60 galones de gasolina, 175 galones de Kerosen
+          (que alimentaban las lamparas de la época), 150 de gasoi, 220 galones de residuos, entre otros derivados que extrajeron.</p>
+        </div>
+
+        <div class="sub-card light">
+          <h4>Mayo de 1883: La Exposición Nacional</h4>
+          <p>La Compañía Nacional Petrolea Minera del Táchira, se presento en una exposición Nacional realizada en Caracas en honor al natalicio de de Simón Bolívar, 
+          donde exhibieron el kerosen y otros productos, realizados en Rubio que lentamente fueron marcando el inicio de la nueva era económica Venezolana.</p>
+        </div>
+
+        <div class="sub-card light">
+          <h4>Noviembre de 1883: La Corrección del Título</h4>
+          <p>El 15 de noviembre , se hace oficial el cambio de nombre de la Compañía Hullera del Táchira, al nombre con el que se conoce hasta el día de hoy que es: “Compañía Nacional Minera Petrolea del Táchira”.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="content-8" class="info-card">
+      <div class="card-red-line"></div>
+      <h3 class="card-title">1884: La Firma</h3>
+      <p>En la ciudad de Caracas, el actual presidente de la República, el General Antonio Guzmán Blanco, firmó y represento el título definitivo de esa Concepción de la Petrolea.</p>
+    </div>
+
+    <div id="content-9" class="info-card">
+      <div class="card-red-line"></div>
+      <h3 class="card-title">1930: Vence La Concepción</h3>
+      <p>Debido a diversos problemas administrativos, técnicos... ocasionaron que la Compañía dejara de explotar petróleo en esta zona, y esto derivo en que los técnicos, se trasladaran a otras zonas delpaís para empezar a hacer estudio de en que parte se pudiera conseguir este material (como lo es el Lago de Maracaibo).</p>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- BOTÓN PARA REGRESAR AL INICIO -->
+<div style="text-align: center; margin: 40px 0;">
+    <a href="../index.html" style="display: inline-flex; align-items: center; gap: 10px; background-color: #6d140b; color: #d8c774; font-family: Arial, sans-serif; font-weight: bold; padding: 12px 30px; border-radius: 50px; text-decoration: none; border: 2px solid #d8c253; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: all 0.3s ease;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        Regresar al Inicio
+    </a>
+</div>
+
+<script src="Js_petrolia/historia_petrolea.js"></script>
+<script src="Js_petrolia/audios.js"></script>
+</body>
+
+</html>

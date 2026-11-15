@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLUVIA DE IDEAS - Canva Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cafe.css">
+    <link rel="stylesheet" href="css/audios.css">
+</head>
+
+<body class="min-h-screen text-gray-800 flex flex-col p-3 md:p-6 gap-6 max-w-[1700px] mx-auto select-none">
+
+    <!-- HEADER SUPERIOR CENTRADO -->
+    <header class="site-header w-full flex flex-col items-center justify-center py-4 relative">
+        <img src="Cafe/1875__3_-removebg-preview.png" alt="Rubio es Café" class="max-h-24 md:max-h-32 object-contain">
+
+        <audio id="audioFondo" src="audio/Rubio_Es_Cafe.mp3" preload="auto" loop></audio>
+
+        <button id="btnAudio" class="audio-control" aria-label="Controlar audio">
+            <svg id="iconoSonido" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            <svg id="iconoMudo" class="oculto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+        </button>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL (SIDEBAR + MAIN EN FILA PARA PANTALLAS GRANDES) -->
+    <div class="flex flex-col lg:flex-row gap-6 w-full">
+
+        <!-- LEFT SIDEBAR: Datos Curiosos -->
+        <aside class="w-full lg:w-[380px] shrink-0 bg-[#eee8db] rounded-3xl p-5 border-2 border-[#dcd4c3] shadow-lg flex flex-col max-h-[calc(100vh-12rem)] overflow-y-auto custom-scroll">
+            
+            <!-- Badge Header -->
+
+<div class="titulo-degradado text-white py-3 px-6 rounded-2xl shadow-md text-center mb-6 border-2 border-black transform -rotate-1">
+    <h1 class="font-handwritten text-3xl font-bold tracking-wide">Datos Curiosos</h1>
+</div>
+
+            <!-- Section 1: Atajos esenciales -->
+            <div class="mb-6">
+                <h2 class="font-display font-semibold text-gray-800 text-lg mb-3 flex items-center gap-2">
+                    ¿Sabías Qué?
+                </h2>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white p-3 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                        <h3 class="font-bold text-xs text-gray-700">¿Sabías Qué?</h3>
+                        <p class="text-[11px] text-gray-500 my-1 leading-tight">Se llegó a conocer como el “Sambil de la época”.</p>
+                    </div>
+
+                    <div class="bg-white p-3 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                        <h3 class="font-bold text-xs text-gray-700">Se ubicaba</h3>
+                        <p class="text-[11px] text-gray-500 my-1 leading-tight">Por un costado de los corredores, la zona comercial, y el estacionamiento de las mulas.</p>  
+                    </div>
+
+                    <div class="bg-white p-3 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                        <h3 class="font-bold text-xs text-gray-700">Los Arrieros</h3>
+                        <p class="text-[11px] text-gray-500 my-1 leading-tight">Este era el término que se le daba a los señores que llevaban un promedio de hasta 12 mulas con las cargas de café.</p>
+                    </div>
+
+                    <div class="bg-white p-3 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                        <h3 class="font-bold text-xs text-gray-700">Resaltaba</h3>
+                        <p class="text-[11px] text-gray-500 my-1 leading-tight">Los Alemanes como uno de los compradores principales.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="Cafe/WhatsApp Image 2026-09-15 at 2.44.58 PM (3).jpeg" alt="Café histórico" class="rounded-xl w-full object-cover">
+            </div>
+
+        </aside>
+
+        <!-- RIGHT MAIN CANVAS: Lluvia de Ideas Mind Map -->
+        <main class="flex-1 relative bg-white/60 rounded-3xl p-4 md:p-8 border-2 border-gray-200 shadow-sm flex flex-col items-center justify-center min-h-[750px] overflow-hidden">
+            
+            <!-- Central Title Header -->
+            <div class="relative z-10 text-center my-6">
+                <!-- Lightbulb Graphic -->
+                <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 text-yellow-400 drop-shadow-[0_0_12px_rgba(250,204,21,0.6)] animate-pulse">
+                    <svg class="w-14 h-14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2a7 7 0 00-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 00-7-7zM9 21a1 1 0 001 1h4a1 1 0 001-1v-1H9v1z"/>
+                    </svg>
+                </div>
+
+                <!-- Title Box -->
+                <!-- DESPUÉS -->
+<div class="titulo-degradado border-4 border-black px-8 py-3 rounded-full sketch-box transform rotate-1 inline-block mt-4 shadow-lg">
+                    <h2 class="font-display text-3xl md:text-5xl font-extrabold tracking-wider text-black">
+                        HISTORIA DEL CAFÉ
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Mind Map Grid Container -->
+            <div class="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 my-auto relative z-10 p-2">
+
+                <!-- IDEA 1: GREEN (Los Corredores) -->
+                <div class="card-container h-56 cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#059669] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#059669] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm">1</span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Los Corredores</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                Era a donde se bajaba el café en mulas, que venía desde Delicias, desde Villa Páez, Río Chiquito, la Revancha, que llegaban a este lugar, para hacer un control.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#059669] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <video src="Cafe/corredores.mp4" class="w-full h-full object-cover rounded-xl opacity-90" autoplay muted loop playsinline></video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 2: YELLOW/AMBER (Los Alemanes) -->
+                <div class="card-container h-56 cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#d97706] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#d97706] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm">2</span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Los Alemanes</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                Decidirían que cargas (refiere a bultos) de café se bajaban, los cuales pesaban entre 65 kg, hasta 90 kg en algunos casos.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#d97706] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="Cafe/CA5.jpeg" alt="Comercio alemán" class="w-full h-full object-cover rounded-xl opacity-90">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 3: BLUE (Las cargas Aprobadas) -->
+                <div class="card-container h-56 cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#2563eb] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#2563eb] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm">3</span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Las cargas Aprobadas</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-base font-semibold leading-snug">
+                                Se montaban en las mulas controladas por un Arriero, dirigidas hasta pasar Colón en San Félix, donde se bajaba a un ferry hacia el Lago de Maracaibo.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#2563eb] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="Cafe/CA9.jpeg" alt="Cargas de café" class="w-full h-full object-cover rounded-xl opacity-90">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 6: MAGENTA / PINK (Distribución de cargas) -->
+                <div class="card-container h-56 cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#c026d3] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#c026d3] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm">4</span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Distribución de cargas</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                Eran para los Alemanes quienes la enviaban a su país; de igual forma los Ingleses; y una parte distribuida a los Estados Unidos.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#c026d3] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="Cafe/CA2.jpeg" alt="Distribución internacional" class="w-full h-full object-cover rounded-xl opacity-90">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 5: PURPLE (Su Exportación) -->
+                <div class="card-container h-56 cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#7c3aed] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#7c3aed] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm">5</span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Su Exportación</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                Fueron toneladas y toneladas de café que se trabajaron enviando y exportando de esta forma, en tiempos donde no existía ni gandolas, ni carreteras.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#7c3aed] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="Cafe/CA15.jpeg" alt="Exportación de café" class="w-full h-full object-cover rounded-xl opacity-90">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 4: ORANGE (El primer camino) -->
+                <div class="card-container h-56 cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#ea580c] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#ea580c] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm">6</span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">El primer camino</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                No fue hasta antes de 1925, cuando se crea la primera carretera, que era más un camino, conocida como la Trasandina.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#ea580c] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="Cafe/CAF2.jpeg" alt="Carretera andina" class="w-full h-full object-cover rounded-xl opacity-90">
+                       
+                        </div>
+                    </div>
+                </div>
+
+            </div>    
+
+        </main>
+
+    </div>
+
+
+    <!-- NUEVA SECCIÓN: INFORMACIÓN DEL INSTITUTO DEL CAFÉ (IAMCAR) -->
+        <main class="flex-1 relative bg-white/60 rounded-3xl p-4 md:p-8 border-2 border-gray-200 shadow-sm flex flex-col items-center justify-center min-h-[750px] overflow-hidden mt-8">
+            
+            <!-- Título Central -->
+            <div class="relative z-10 text-center my-6">
+                <!-- Bombillito decorativo -->
+                <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 text-yellow-400 drop-shadow-[0_0_12px_rgba(250,204,21,0.6)] animate-pulse">
+                    <svg class="w-14 h-14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2a7 7 0 00-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 00-7-7zM9 21a1 1 0 001 1h4a1 1 0 001-1v-1H9v1z"/>
+                    </svg>
+                </div>
+
+                <!-- Caja del Título -->
+                <div class="titulo-degradado border-4 border-black px-8 py-3 rounded-full sketch-box transform -rotate-1 inline-block mt-4 shadow-lg">
+                    <h2 class="font-display text-2xl md:text-4xl font-extrabold tracking-wider text-black uppercase">
+                        IAMCAR
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Grid de Tarjetas del Instituto (IAMCAR) -->
+            <div class="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 my-auto relative z-10 p-2">
+
+                <!-- TARJETA 1: ¿Qué es el IAMCAR? -->
+                <div class="card-container h-56 cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#059669] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#059669] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm">1</span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">El Instituto (IAMCAR)</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                Es el Instituto Autónomo Municipal del Café Rubiense, creado bajo Ordenanza Municipal promulgada el 23 de abril de 2026, con personalidad jurídica y patrimonio propio.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#059669] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <video src="Cafe/WhatsApp Video 2026-11-14 at 9.36.45 PM.mp4" alt="IAMCAR Rubio" autoplay muted loop playsinline>
+                            <span class="absolute bottom-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full font-display">IAMCAR - Rubio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA 2: Su Domicilio -->
+                <div class="card-container h-56 cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#d97706] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#d97706] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm">2</span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Domicilio y Sede</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                Según el Artículo 3, su sede principal está ubicada en la ciudad de Rubio, Municipio Junín, estado Táchira, pudiendo establecer oficinas en sus parroquias.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#d97706] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="Cafe/CA3.jpeg" alt="Domicilio Junín" class="w-full h-full object-cover rounded-xl opacity-90">
+                            <span class="absolute bottom-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full font-display">Municipio Junín</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA 3: Finalidad Principal -->
+                <div class="card-container h-56 cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#2563eb] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#2563eb] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm">3</span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Finalidad (Art. 5)</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-base font-semibold leading-snug">
+                                Apoyar a caficultores, productores, centros de beneficiado y torrefactoras para mejorar la productividad, calidad y comercialización del café y sus cultivos asociados.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#2563eb] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="Cafe/CA14.jpeg" alt="Apoyo a caficultores" class="w-full h-full object-cover rounded-xl opacity-90">
+                            <span class="absolute bottom-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full font-display">Desarrollo Endógeno</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA 6: Sello Territorial y QR -->
+                <div class="card-container h-56 cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#c026d3] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#c026d3] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm">4</span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Sello y Código QR</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-base font-semibold leading-snug">
+                                Impulsa el Sello Territorial del Café Rubiense y el uso de Códigos QR para certificar el origen, calidad y trazabilidad del grano del municipio.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#c026d3] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="Cafe/CA12.jpeg" alt="Sello Territorial" class="w-full h-full object-cover rounded-xl opacity-90">
+                            <span class="absolute bottom-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full font-display">Trazabilidad y Origen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA 5: Atribuciones -->
+                <div class="card-container h-56 cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#7c3aed] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#7c3aed] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm">5</span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Atribuciones (Art. 6)</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                Diseñar, planificar y ejecutar la política municipal concerniente al fomento y protección de la actividad cafetalera en todo el Municipio Junín.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#7c3aed] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="Cafe/CA19.jpeg" alt="Política cafetalera" class="w-full h-full object-cover rounded-xl opacity-90">
+                            <span class="absolute bottom-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full font-display">Fomento y Protección</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA 4: Capacitación y Gestión -->
+                <div class="card-container h-56 cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#ea580c] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#ea580c] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm">6</span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Asistencia y Alianzas</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-base font-semibold leading-snug">
+                                Brinda capacitación, promoción, asistencia técnica y financiera, coordinando acciones con organismos estadales, nacionales y empresas privadas.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#ea580c] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="Cafe/CA17.jpeg" alt="Asistencia técnica" class="w-full h-full object-cover rounded-xl opacity-90">
+                            <span class="absolute bottom-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full font-display">Asistencia Técnica</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>    
+
+        </main>
+
+    <!-- BOTÓN PARA REGRESAR AL INICIO -->
+<div class="w-full flex justify-center my-8">
+    <a href="../index.html" class="flex items-center gap-2 bg-[#5c6b24] hover:bg-[#1e2e13] text-[#d8c253] font-display font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 border-[#d8c253]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        Regresar al Inicio
+    </a>
+</div>
+
+    <script src="js/cafe.js"></script>
+    <script src="js/audios.js"></script>
+
+
+</body>
+</html>

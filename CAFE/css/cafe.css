@@ -1,0 +1,172 @@
+/* Custom handwritten feel fonts */
+.font-handwritten {
+    font-family: 'Caveat', cursive;
+}
+.font-display {
+    font-family: 'Fredoka', sans-serif;
+}
+/* Configuración del fondo de la página */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #d80000 0%, #004d00 45%, #5eb832 100%) !important;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* Hand-drawn sketchy border effect using SVG drop-shadow and irregular borders */
+.sketch-box {
+    border-radius: 12px 24px 14px 22px / 22px 14px 24px 12px;
+    box-shadow: 3px 4px 0px rgba(0,0,0,0.8);
+    transition: all 0.2s ease;
+}
+.sketch-box:hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 5px 6px 0px rgba(0,0,0,0.85);
+}
+
+/* Double border effect for mind map nodes */
+.sketch-double-border {
+    position: relative;
+    background: white;
+    border: 3px solid currentColor;
+    border-radius: 16px 28px 18px 24px / 24px 18px 28px 16px;
+    box-shadow: 4px 5px 0px rgba(0,0,0,0.15);
+}
+.sketch-double-border::before {
+    content: '';
+    position: absolute;
+    top: -7px; left: -7px; right: -7px; bottom: -7px;
+    border: 3px solid currentColor;
+    border-radius: 20px 32px 22px 28px / 28px 22px 32px 20px;
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+/* Custom scrollbar for sidebar */
+.custom-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+    background: #f1ede6;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: #d4cebe;
+    border-radius: 3px;
+}
+
+/* --- EFECTO DE VOLTEO 3D SEGURO --- */
+.card-container {
+    perspective: 1000px;
+}
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transform-style: preserve-3d;
+}
+.card-container:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.card-back {
+    transform: rotateY(180deg);
+}
+
+/* --- Corrección del Header --- */
+header.site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+/* Estilo armonioso para la sección de Datos Curiosos (Sidebar izquierdo) */
+aside {
+  background-color: rgba(247, 243, 233, 0.92) !important;
+  border-color: rgba(217, 205, 182, 0.8) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25), 0 8px 10px -6px rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(8px);
+}
+
+/* Estilo armonioso para la sección principal (Historia del Café) */
+main {
+  background-color: rgba(253, 251, 247, 0.88) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 12px 30px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Estilo con degradado para el contenedor del título */
+.titulo-degradado {
+  background: linear-gradient(135deg, #d80000 0%, #004d00 45%, #5eb832 100%) !important;
+  color: white !important;
+}
+
+/* Cambia el texto del título a blanco para que resalte bien */
+.titulo-degradado h2 {
+  color: #ffffff !important;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Bordes con degradado rojo-verde para las tarjetas pequeñas de Datos Curiosos */
+aside .grid > div {
+  position: relative;
+  border: 2px solid transparent !important;
+  background-image: linear-gradient(white, white), linear-gradient(135deg, #d80000 0%, #004d00 50%, #5eb832 100%) !important;
+  background-origin: border-box !important;
+  background-clip: padding-box, border-box !important;
+}
+
+/* --- BORDES CON DEGRADADO EN LAS TARJETAS PRINCIPALES --- */
+.sketch-double-border {
+  border-color: transparent !important;
+  background-image: linear-gradient(white, white), linear-gradient(135deg, #d80000 0%, #004d00 50%, #5eb832 100%) !important;
+  background-origin: border-box !important;
+  background-clip: padding-box, border-box !important;
+}
+
+/* Ajuste para el marco exterior doble */
+.sketch-double-border::before {
+  border-color: #004d00 !important;
+  opacity: 0.6 !important;
+}
+
+/* --- CÍRCULOS DE NÚMEROS CON DEGRADADO ROJO-VERDE --- */
+.sketch-double-border span.w-8.h-8 {
+  background: linear-gradient(135deg, #d80000 0%, #004d00 50%, #5eb832 100%) !important;
+  color: #ffffff !important;
+}
+
+/* Borde degradado para el contenedor de la imagen histórica en Datos Curiosos */
+aside img {
+  border: 3px solid transparent !important;
+  background-image: linear-gradient(white, white), linear-gradient(135deg, #d80000 0%, #004d00 50%, #5eb832 100%) !important;
+  background-origin: border-box !important;
+  background-clip: padding-box, border-box !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo con mayor transparencia para Datos Curiosos */
+aside {
+  background-color: rgba(247, 243, 233, 0.65) !important;
+  border-color: rgba(217, 205, 182, 0.6) !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(8px);
+}
+
+/* Estilo con mayor transparencia para Historia del Café */
+main {
+  background-color: rgba(253, 251, 247, 0.60) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 12px 30px -5px rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(10px);
+}

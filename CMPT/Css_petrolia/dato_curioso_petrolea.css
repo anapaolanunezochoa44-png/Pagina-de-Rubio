@@ -1,0 +1,150 @@
+/* --- ESTILO PARA EL DATO CURIOSO (DIAMANTIVO) --- */
+.dato-curioso-box {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+  border-left: 6px solid #ffb300;
+  border-right: 1px solid #ffe082;
+  border-top: 1px solid #ffe082;
+  border-bottom: 1px solid #ffe082;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 179, 0, 0.2);
+  margin: 25px 0;
+  position: relative;
+}
+
+.dato-curioso-box h3 {
+  color: #b78103;
+  margin-top: 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dato-curioso-box p {
+  color: #5d4037;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* --- CONTENEDOR GENERAL DE LA SECCIÓN --- */
+.fundadores-seccion-centrada {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0;
+}
+
+/* --- CONTENEDOR DE LA TARJETA 3D --- */
+.tarjeta-flip {
+  background-color: transparent;
+  width: 100%;
+  max-width: 850px;
+  height: 420px;
+  perspective: 1000px; /* Crea el efecto de profundidad 3D */
+}
+
+/* --- INNER QUE HACE EL EFECTO DE GIRO --- */
+.tarjeta-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  border-radius: 12px;
+}
+
+/* Al pasar el cursor, gira 180 grados */
+.tarjeta-flip:hover .tarjeta-flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* --- CARAS DELANTERA Y TRASERA --- */
+.tarjeta-cara {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Oculta la parte trasera al girar */
+  backface-visibility: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* CARA FRONTAL (FOTO) */
+.tarjeta-frente {
+  background: #2b2b2b;
+  color: white;
+  align-items: center;
+}
+
+.tarjeta-frente img {
+  width: 100%;
+  max-width: 450px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #d82338;
+  margin-bottom: 15px;
+}
+
+.tarjeta-frente h4 {
+  color: #ffb300;
+  font-size: 16px;
+  margin: 0;
+}
+
+.instruccion-giro {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* CARA TRASERA (ACCIONES) */
+.tarjeta-atras {
+  background: #1e1e1e;
+  color: white;
+  transform: rotateY(180deg); /* Empieza ya volteada por detrás */
+  text-align: left;
+}
+
+.tarjeta-atras h3 {
+  color: #ff4d4d;
+  margin-top: 0;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.tarjeta-atras p {
+  color: #ccc;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.acciones-tabla-moderna {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.acciones-tabla-moderna li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 13px;
+}
+
+.acciones-tabla-moderna li span:first-child {
+  color: #eee;
+}
+
+.acciones-tabla-moderna li span:last-child {
+  color: #ffb300;
+  font-weight: bold;
+}
