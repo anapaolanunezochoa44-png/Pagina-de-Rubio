@@ -1,0 +1,156 @@
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    width: 100%;
+    /* Defina aquí la altura fija estándar para TODAS las tarjetas (ej. 280px o 300px) */
+    height: 350px !important; 
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    position: relative;
+    margin-bottom: 25px; /* Espacio uniforme entre tarjetas */
+}
+
+
+.bloque-x, 
+.bloque-y, 
+.bloque-z {
+    width: 50% !important; /* Ocupan exactamente la mitad cada uno */
+    height: 100% !important; /* Llenan toda la altura de la tarjeta */
+    box-sizing: border-box;
+}
+
+.bloque-x {
+    background-color: #2196F3;
+    color: #ffffff;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bloque-y {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(135deg, #f4ecd8 0%, #e8d9bc 100%), url('https://www.transparenttextures.com/patterns/aged-paper.png');
+    border: 4px double #8c6747; 
+    overflow-y: auto; /* Si el texto es muy largo, permite scroll interno sin alterar el tamaño de la tarjeta */
+}
+
+.bloque-z {
+    position: relative;
+    overflow: hidden;
+    background-color: #000000; /* Fondo oscuro mientras carga la foto/video */
+}
+
+.bloque-z img,
+.bloque-z video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Mantiene la proporción recortando los bordes sobrantes */
+    display: block;
+}
+/* ===================================================
+   POSICIONAMIENTO Y VISIBILIDAD DE BOTONES
+   =================================================== */
+
+.btn-ir, .btn-regresar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    background-color: #d82338; /* Rojo */
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Botón IR: Se ve en estado normal, ubicado en el borde izquierdo de la foto */
+.timeline-item:not(.desplazado) .btn-ir {
+    display: flex !important;
+    left: -18px; 
+}
+.timeline-item:not(.desplazado) .btn-regresar {
+    display: none !important;
+}
+
+/* Botón REGRESAR: Se ve al estar desplazado */
+.timeline-item.desplazado .btn-ir {
+    display: none !important;
+}
+.timeline-item.desplazado .btn-regresar {
+    display: flex !important;
+    left: -18px;
+}
+
+
+.timeline-item:not(.desplazado) .bloque-y {
+    display: none !important;
+}
+
+.timeline-item:not(.desplazado) .bloque-x {
+    display: flex !important;
+    flex: 1;
+}
+
+.timeline-item.desplazado .bloque-x {
+    display: none !important;
+}
+
+.timeline-item.desplazado .bloque-y {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.timeline-item .bloque-z {
+    flex: 1;
+}
+
+/* ================================================= */
+/* AJUSTE RESPONSIVO PARA LA SECCIÓN DE PUENTES EN MÓVIL */
+/* ================================================= */
+@media (max-width: 768px) {
+    /* Apila los elementos de la tarjeta en columna vertical */
+    .timeline-item {
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: 420px !important;
+    }
+
+    /* Hace que tanto el cuadro de texto como la imagen/video ocupen todo el ancho */
+    .bloque-x, 
+    .bloque-y, 
+    .bloque-z {
+        width: 100% !important;
+        height: 210px !important;
+    }
+
+    /* Reubica el botón de interacción para que quede cómodamente dentro de la tarjeta en el tlf */
+    .timeline-item:not(.desplazado) .btn-ir,
+    .timeline-item.desplazado .btn-regresar {
+        left: 15px !important;
+        top: 15px !important;
+        transform: none !important;
+    }
+}

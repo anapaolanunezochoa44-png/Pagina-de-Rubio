@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de Tiempo Interactiva</title>
+    <link rel="stylesheet" href="css/interaccción_puentes_pl.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/pergamino.css">
+</head>
+
+<body>
+
+    <header>
+    <img src="img puentes/1875__2_-removebg-preview.png">
+
+<audio id="audioFondo" src="audios/Rubio_Es_Ciudad_Pontalida.mp3" preload="auto" loop></audio>
+
+<button id="btnAudio" class="audio-control" aria-label="Controlar audio">
+    <svg id="iconoSonido" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+    <svg id="iconoMudo" class="oculto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+</button>
+  </header>
+
+<div class="scene">
+  <div class="a3d" style="--n:10">
+
+    <video class="card" src="img puentes/Puentes Las Marias.mp4" style="--i:0" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="img puentes/Puente Los Carapos.mp4" style="--i:1" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="img puentes/Puente 24 de Julio.mp4" style="--i:2" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="img puentes/Puente El BOqueron 2.mp4" style="--i:3" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="img puentes/Puente Unión, otra toma.mp4" style="--i:4" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="img puentes/Puente Capacha 3.mp4" style="--i:5" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="img puentes/Puente Libertador 2.mp4" style="--i:6" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="img puentes/Puente General ZEA 2.mp4" style="--i:7" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="img puentes/puente junin video.mp4" style="--i:8" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="img puentes/Puente Juan Entrena.mp4" style="--i:9" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="img puentes/Puente Miranda 2.mp4" style="--i:10" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="img puentes/Puente Elevado.mp4" style="--i:11" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="img puentes/puente terminal.mp4" style="--i:12" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="img puentes/Puente peatonal Carlos ANdres.mp4" style="--i:13" 
+      autoplay muted loop playsinline></video>
+  </div>
+</div>
+<div class="parrafo">
+    <p>El Doctor Alejandro Osorio Negrón Bautizó a Rubio como la ciudad Pontalida, pues nuestro pueblo cuenta con un total de 21 puentes actualmente,
+        los cuales son:
+    </p>
+</div>
+    
+
+    <div class="timeline-container">
+
+<div class="timeline-item impar">
+    <div class="bloque-x">
+        <h2>1. PUENTE DE PIEDRA</h2>
+    </div>
+    <div class="bloque-y">
+        <h2>1. Puente de Piedra</h2>
+        <p>Ubicado en el sector de Canía, hecho por la naturaleza, algunos dicen que fue creado por nuestros nativos</p>
+    </div>
+    <div class="bloque-z">
+    <img src="img puentes/Puente de piedra.png" alt="Puente de Piedra">
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item par">
+    <div class="bloque-y">
+        <h2>Puente Unión, 1872</h2>
+        <p>(De madera) fue el enlace entre Pueblo Viejo y Nuevo de poco uso. En 1893 se levantó otro que duró menos que el 
+        anterior, el soberbio Carapos en una de sus grandes crecidas se lo cargó. En 1903, el Gobierno regional construyó otro, 
+        su tiempo de duración fue 12 años, ya que el afluente lo arrastró: en 1915 se inauguró un puente hecho en metal, que su 
+        estructura fue traída desde los Estados Unidos, 1940 se le realizó mantenimiento; sin embargo, el pesod de un camión cargado hundió la 
+        plataforma, dejando al pueblo viejo incomunicado de la ciudad. Y en 1957 el Ministerio de Obras Públicas (M.O.P) instaló una 
+        pasarela de peatones junto al puente de concreto que se estaba construyendo, y que se inauguró en 1959.</p>
+    </div>
+    <div class="bloque-x">
+        <h2>2. PUENTE UNIÓN</h2>
+        <h3>1872</h3>
+    </div>
+    <div class="bloque-z">
+    <video src="img puentes/Puente Unión, otra toma.mp4" autoplay muted loop playsinline></video>
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item impar">
+    <div class="bloque-x">
+        <h2>3. PUENTE MIRANDA O PUENTE AZUL</h2>
+        <h3>1886</h3>
+    </div>
+    <div class="bloque-y">
+        <h2>Puente Miranda o Puente Azul, 1886</h2>
+        <p>En homenaje al Generalísimo Sebastián Francisco de Miranda, de color azul y parte del escudo de armas de la ciudad, 
+        obra hecha a mano, con piedra, ladrillo y mezcla real.</p>
+    </div>
+    <div class="bloque-z">
+    <video src="img puentes/Puente Miranda 2.mp4" autoplay muted loop playsinline></video>
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item par">
+    <div class="bloque-y">
+        <h2>Puente Libertador, Centenario, 1908</h2>
+        <p>Conocido popularmente como Domingo Fuentes, como reza la canción “Ciudad Pontalidad”, de Domingo Palazzi, 
+        este señor fue el primero en abrir una estación de servicio (Bomba de Gasolina), La Perla Del Norte , en el inmueble de los Gómez 
+        al lado del cementerio, y después se trasladó a la esquina del pensamiento, actualmente colchonería La Fallete.</p>
+    </div>
+    <div class="bloque-x">
+        <h2>4. PUENTE LIBERTADOR, CENTENARIO</h2>
+        <h3>1908</h3>
+    </div>
+    <div class="bloque-z">
+    <video src="img puentes/Puente Libertador 2.mp4" autoplay muted loop playsinline></video>
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item impar">
+    <div class="bloque-x">
+        <h2>5. PUENTE 24 DE JULIO</h2>
+        <h3>1924</h3>
+    </div>
+    <div class="bloque-y">
+        <h2>Puente 24 de Julio, 1924</h2>
+        <p>Dicha obra se levantó para empalmar el barrio San Diego con la ciudad, más tarde sirvió de enlace con la carretera que va para la zona fronteriza.</p>
+    </div>
+    <div class="bloque-z">
+    <video src="img puentes/Puente 24 de Julio.mp4" autoplay muted loop playsinline></video>
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item par">
+    <div class="bloque-y">
+        <h2>Puente Venezuela, 1926</h2>
+        <p>Al final del barrio La Palmita, detrás del Cementerio Municipal, se decia que no hubo daño por parte de la Quebrada La Cachapa, 
+        pero a falta de mantenimiento y el tiempo sí; y entonces se construyó otro en 2007 más amplió y con nuevas técnicas.</p>
+    </div>
+    <div class="bloque-x">
+        <h2>6. PUENTE VENEZUELA</h2>
+        <h3>1926</h3>
+    </div>
+    <div class="bloque-z">
+    <img src="img puentes/Puente Venezuela.jpg" alt="Puente Venezuela">
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item impar">
+    <div class="bloque-x">
+        <h2>7. PUENTE CAPACHA</h2>
+        <h3>1934</h3>
+    </div>
+    <div class="bloque-y">
+        <h2>Puente Capacha, 1934</h2>
+        <p>También se le conoció como Rojo y los Suspiros (bautizado por el ilustre rubiense Tulio Chiossone), ubicados en la calle 
+        principal del Barrio la Palmita, y dice la leyenda que allí los jóvenes esperaban a sus lindas novias que se dirigían a la misa de las 
+        5 de la mañana, y a veces estás no llegaban y todo se convertía en suspiros. </p>
+    </div>
+    <div class="bloque-z">
+    <video src="img puentes/Puente Capacha o los Suspiros.mp4" autoplay muted loop playsinline></video>
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+
+<div class="timeline-item par">
+    <div class="bloque-y">
+        <h2>Puente de Plata o los Músicos, 1941</h2>
+        <p>Lo llaman así, por encima de dicha estructura pasaron zurrones de cuero 
+        cargados con morocotas y fuertes de plata del hacendado Don Félix Díaz y Músicos porque todas las noches era la 
+        cita de los integrantes de la Banda Municipal y algunos compositores que durante horas hablaban de orquestas, conjuntos y canciones.</p>
+    </div>
+    <div class="bloque-x">
+        <h2>8. PUENTE DE PLATA O LOS MÚSICOS</h2>
+        <h3>1941</h3>
+    </div>
+    <div class="bloque-z">
+    <img src="img puentes/Puente de Plata.jpeg" alt="Puente de Plata">
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item impar">
+    <div class="bloque-x">
+        <h2>9. PUENTE JUNÍN</h2>
+        <h3>1950</h3>
+    </div>
+    <div class="bloque-y">
+        <h2>Puente Junín, 1950</h2>
+        <p>En la Victoria parte baja, es la entrada a la ciudad, por el lado de la carretera San Cristóbal, Rubio. </p>
+    </div>
+    <div class="bloque-z">
+    <img src="img puentes/Puente Junín frente 1.jpeg" alt="Puente Junín">
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item par">
+    <div class="bloque-y">
+        <h2>Puente Los Carapos, 1965</h2>
+        <p>Barrios San Diego, fue inaugurado el 23 de febrero del mismo año, en homenaje a nuestro nativos y hacer la vía 
+        más rápida de vehículos hacia la frontera, pues dicha obra es de doble vía.</p>
+    </div>
+    <div class="bloque-x">
+        <h2>10. PUENTE LOS CARAPOS</h2>
+        <h3>1965</h3>
+    </div>
+    <div class="bloque-z">
+    <video src="img puentes/Puente Los Carapos.mp4" autoplay muted loop playsinline></video>
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item impar">
+    <div class="bloque-x">
+        <h2>11. PUENTE EL CAFETAL</h2>
+        <h3>1968</h3>
+    </div>
+    <div class="bloque-y">
+        <h2>Puente El Cafetal, 1968</h2>
+        <p>Fue edificado para unir el nuevo caserío del Centro Poblado el Rodeo, donde se había construido un centenar de 
+        viviendas rurales para los pisatarios de la Unidad Agropecuaria el Rodeo.</p>
+    </div>
+    <div class="bloque-z">
+    <img src="img puentes/Puente Cafetal.jpeg" alt="Puente Cafetal">
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item par">
+    <div class="bloque-y">
+        <h2>Puente Don Martín, 1971</h2>
+        <p>Hecho en concreto, su creador lo bautizo con el nombre de Don Martín Suárez en homenaje al gran 
+        trabajador de la Agricultura, de la Industria y el Comercio, dirigente deportivo; montó el periódico Rotary Club; 
+        en dicho sector de Vuelta de Oreja instaló la Alfarería, que producía 8.000 ladrillos diarios y teja.</p>
+    </div>
+    <div class="bloque-x">
+        <h2>12. PUENTE DON MARTÍN</h2>
+        <h3>1971</h3>
+    </div>
+    <div class="bloque-z">
+    <img src="img puentes/Don Martin 2.jpeg" alt="Puente Don Martín">
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item impar">
+    <div class="bloque-x">
+        <h2>13. PUENTE TENERÍA</h2>
+        <h3>1973</h3>
+    </div>
+    <div class="bloque-y">
+        <h2>Puente Tenería, 1973</h2>
+        <p>Construido por la Tenería Rubio.</p>
+    </div>
+    <div class="bloque-z">
+    <img src="img puentes/Puente Teneria.jpeg" alt="Puente Teneria">
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item par">
+    <div class="bloque-y">
+        <h2>Puente Peatonal Carlos Andrés Peréz, 1974</h2>
+        <p>En el sector las Termopilas que une con el barrio la Ceiba</p>
+    </div>
+    <div class="bloque-x">
+        <h2>14. PUENTE PEATONAL CARLOS ANDRÉS PERÉZ</h2>
+        <h3>1974</h3>
+    </div>
+    <div class="bloque-z">
+    <video src="img puentes/Puente peatonal Carlos Andres Perez 2.mp4" autoplay muted loop playsinline></video>
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item impar">
+    <div class="bloque-x">
+        <h2>15. PUENTE GENERAL ZEA O ING. CÉSAR CÁRDENAS</h2>
+        <h3>1975</h3>
+    </div>
+    <div class="bloque-y">
+        <h2>Puente General Zea, o Ing. César Cárdenas 1975</h2>
+        <p>Construido en el sector las Termopilas y la popular Calle Zea. Dato Curioso: La armadura metálica formaba parte del 
+        Puente Internacional Simón Bolívar, que estuvo ubicado durante muchos años entre las ciudades de San Antonio del Táchira, 
+        y la ciudad de los Almendros, Cúcuta, Norte de Santander, Colombia.</p>
+    </div>
+    <div class="bloque-z">
+    <video src="img puentes/Puente General ZEA 2.mp4" autoplay muted loop playsinline></video>
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item par">
+    <div class="bloque-y">
+        <h2>Puente El Boquerón, 1977</h2>
+        <p>Unión de la perimetral, enlace entre el Poblado y el Cafetal.</p>
+    </div>
+    <div class="bloque-x">
+        <h2>16. PUENTE EL BOQUERÓN</h2>
+        <h3>1977</h3>
+    </div>
+    <div class="bloque-z">
+    <img src="img puentes/Puente Boqueron.jpg" alt="Puente Boquerón">
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item impar">
+    <div class="bloque-x">
+        <h2>17. PUENTE LA YE</h2>
+        <h3>1977</h3>
+    </div>
+    <div class="bloque-y">
+        <h2>Puente La Ye, 1977</h2>
+        <p>Instalación que sirve de enlace entre la Perimetral y la carretera en construcción vía a San Cristóbal.</p>
+    </div>
+    <div class="bloque-z">
+    <video src="img puentes/PUENTE LA Y 3.mp4" autoplay muted loop playsinline></video>
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item par">
+    <div class="bloque-y">
+        <h2>Puente Las Marias, 1988</h2>
+        <p>En el sector del mismo nombre y es utilizado para unir los Barrios San Diego y la Estación.</p>
+    </div>
+    <div class="bloque-x">
+        <h2>18. PUENTE LAS MARIAS</h2>
+        <h3>1988</h3>
+    </div>
+    <div class="bloque-z">
+    <video src="img puentes/Puentes Las Marias.mp4" autoplay muted loop playsinline></video>
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item impar">
+    <div class="bloque-x">
+        <h2>19. PUENTE JUAN ENTRENA</h2>
+        <h3>1998</h3>
+    </div>
+    <div class="bloque-y">
+        <h2>Puente Juan Entrena, 1998</h2>
+        <p>Ubicado en el sector la Estación, lleva el nombre de un personaje rubiense que se desprendió de dos fanegadas 
+        de tierra para la construcción del Templo y parque público de nuestro pueblo. Comunicándose la ciudad con los 
+        sectores Tapias, Cuqui, Bicentenario y Pozo Azul por la carretera de las Tapias.</p>
+    </div>
+    <div class="bloque-z">
+    <video src="img puentes/Puente Juan Entrena.mp4" autoplay muted loop playsinline></video>
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item par">
+    <div class="bloque-y">
+        <h2>Puente El Japón o Terminal, 2007</h2>
+        <p>Obra que servirá para los agricultores de la zona rural, Miraflores, Sardinas, Alineadero, Cascari, Japón y Lejía 
+        y para los transportistas que viajan a la zona fronteriza.</p>
+    </div>
+    <div class="bloque-x">
+        <h2>20. PUENTE EL JAPÓN O TERMINAL</h2>
+        <h3>2007</h3>
+    </div>
+    <div class="bloque-z">
+    <video src="img puentes/puente terminal.mp4" autoplay muted loop playsinline></video>
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+<div class="timeline-item impar">
+    <div class="bloque-x">
+        <h2>21. PUENTE EL ELEVADO</h2>
+        <h3>2009</h3>
+    </div>
+    <div class="bloque-y">
+        <h2>Puente El Elevado, 2009</h2>
+        <p>>En construcción con las nuevas técnicas y que servirá para el paso de un mayor fluido vehicular, en la nueva carretera 
+        San Cristóbal Rubio-San Antonio.</p>
+    </div>
+    <div class="bloque-z">
+    <video src="img puentes/Puente Elevado.mp4" autoplay muted loop playsinline></video>
+    
+    <!-- Botones de navegación sobre el medio -->
+    <button class="btn-ir" aria-label="Siguiente"></button>
+    <button class="btn-regresar" aria-label="Anterior"></button>
+</div>
+</div>
+
+    </div>
+
+    <!-- BOTÓN PARA REGRESAR AL INICIO -->
+<div style="text-align: center; margin: 40px 0;">
+    <a href="../index.html" style="display: inline-flex; align-items: center; gap: 10px; background-color: #19027e; color: #d8c774; font-family: Arial, sans-serif; font-weight: bold; padding: 12px 30px; border-radius: 50px; text-decoration: none; border: 2px solid #d8c253; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: all 0.3s ease;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        Regresar al Inicio
+    </a>
+</div>
+
+    <script src="js/interacción_puentes_pl.js"></script>
+    <script src="js/audios.js"></script>
+</body>
+</html>

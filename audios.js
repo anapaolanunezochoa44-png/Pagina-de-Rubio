@@ -4,9 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const iconoSonido = document.getElementById("iconoSonido");
     const iconoMudo = document.getElementById("iconoMudo");
 
+    // Intentar reproducir de inicio
     audio.play().then(() => {
+        // Reproduciendo con éxito
         actualizarIconos(false);
     }).catch(error => {
+        // Si el navegador bloquea el autoplay, esperamos el primer toque del usuario
         console.log("Autoplay bloqueado por el navegador, esperando interacción.");
         actualizarIconos(true);
         
@@ -21,9 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
         window.addEventListener("keydown", activarAudioPorInteraccion);
     });
 
-
+    // Control al hacer clic en el botón flotante
     btnAudio.addEventListener("click", (e) => {
-        e.stopPropagation(); 
+        e.stopPropagation(); // Evita que dispare eventos cruzados
         if (audio.paused) {
             audio.play();
             actualizarIconos(false);
