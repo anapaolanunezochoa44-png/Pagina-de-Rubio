@@ -1,0 +1,92 @@
+/* Custom handwritten feel fonts */
+.font-handwritten {
+    font-family: 'Caveat', cursive;
+}
+.font-display {
+    font-family: 'Fredoka', sans-serif;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f9;
+    background-image: radial-gradient(#d1d5db 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+}
+
+/* Hand-drawn sketchy border effect using SVG drop-shadow and irregular borders */
+.sketch-box {
+    border-radius: 12px 24px 14px 22px / 22px 14px 24px 12px;
+    box-shadow: 3px 4px 0px rgba(0,0,0,0.8);
+    transition: all 0.2s ease;
+}
+.sketch-box:hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 5px 6px 0px rgba(0,0,0,0.85);
+}
+
+/* Double border effect for mind map nodes */
+.sketch-double-border {
+    position: relative;
+    background: white;
+    border: 3px solid currentColor;
+    border-radius: 16px 28px 18px 24px / 24px 18px 28px 16px;
+    box-shadow: 4px 5px 0px rgba(0,0,0,0.15);
+}
+.sketch-double-border::before {
+    content: '';
+    position: absolute;
+    top: -7px; left: -7px; right: -7px; bottom: -7px;
+    border: 3px solid currentColor;
+    border-radius: 20px 32px 22px 28px / 28px 22px 32px 20px;
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+/* Custom scrollbar for sidebar */
+.custom-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+    background: #f1ede6;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: #d4cebe;
+    border-radius: 3px;
+}
+
+/* --- TAMAÑO Y VOLTEO DE TARJETAS --- */
+.card-container {
+    perspective: 1000px;
+    width: 100%;
+}
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transform-style: preserve-3d;
+}
+.card-container:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /* Esto ayuda a que el texto mantenga un padding cómodo y no desborde */
+    box-sizing: border-box; 
+}
+.card-back {
+    transform: rotateY(180deg);
+}
+
+/* --- Corrección del Header --- */
+header.site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}

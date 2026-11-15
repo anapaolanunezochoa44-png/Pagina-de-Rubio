@@ -1,0 +1,80 @@
+/* Contenedor general para centrarlo perfecto en la pantalla */
+#carrusel-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0;
+}
+
+/* La caja principal del carrusel puro */
+.mi-carrusel-puro {
+    position: relative;
+    width: 75%; /* Ajusta el ancho a tu gusto (ej. 70%, 80%) */
+    max-width: 800px;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: #212529;
+}
+
+/* El track que contiene las imágenes */
+.carrusel-track-puro {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Cada elemento individual */
+.carrusel-item-puro {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carrusel-item-puro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Los puntitos indicadores abajo */
+.carrusel-puntos {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.carrusel-puntos .punto {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carrusel-puntos .punto.activo {
+    background-color: #ffffff;
+    transform: scale(1.2);
+}
+
+/* Responsivo para celulares */
+@media (max-width: 991px) {
+    .mi-carrusel-puro {
+        width: 90%;
+        height: 280px;
+    }
+}
+
+@media (max-width: 576px) {
+    .mi-carrusel-puro {
+        width: 95%;
+        height: 200px;
+    }
+}

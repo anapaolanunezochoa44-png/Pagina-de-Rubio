@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLUVIA DE IDEAS - Canva Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/iglesia.css">
+    <link rel="stylesheet" href="css/audios.css">
+    <link rel="stylesheet" href="css/carrusel2.css">
+    <link rel="stylesheet" href="css/pergamino.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+</head>
+
+<body class="min-h-screen text-gray-800 flex flex-col p-3 md:p-6 gap-6 max-w-[1700px] mx-auto select-none">
+
+    <!-- HEADER SUPERIOR CENTRADO -->
+    <header class="site-header w-full flex flex-col items-center justify-center py-4 relative">
+        <img src="iglesia/Iglesia logo.png" alt="Rubio es Café" class="max-h-24 md:max-h-32 object-contain">
+
+        <audio id="audioFondo" src="audio/La_Iglesia_Santa_Barbara.mp3" preload="auto" loop></audio>
+
+        <button id="btnAudio" class="audio-control" aria-label="Controlar audio">
+            <svg id="iconoSonido" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            <svg id="iconoMudo" class="oculto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+        </button>
+    </header>
+
+    <div class="scene">
+  <div class="a3d" style="--n:10">
+
+    <video class="card" src="iglesia/WhatsApp Video 2026-09-19 at 7.29.37 PM (1).mp4" style="--i:0" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="iglesia/WhatsApp Video 2026-09-19 at 7.29.37 PM (2).mp4" style="--i:1" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="iglesia/WhatsApp Video 2026-09-19 at 7.29.37 PM.mp4" style="--i:2" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="iglesia/WhatsApp Video 2026-09-19 at 7.29.38 PM (1).mp4" style="--i:3" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="iglesia/WhatsApp Video 2026-09-19 at 7.29.38 PM.mp4" style="--i:4" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="iglesia/WhatsApp Video 2026-09-19 at 7.29.38 PM (1).mp4" style="--i:5" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="iglesia/WhatsApp Video 2026-09-19 at 7.29.38 PM.mp4" style="--i:6" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="iglesia/WhatsApp Video 2026-09-19 at 7.29.40 PM (1).mp4" style="--i:7" 
+      autoplay muted loop playsinline></video>
+    <video class="card" src="iglesia/WhatsApp Video 2026-09-19 at 7.29.40 PM.mp4" style="--i:8" 
+      autoplay muted loop playsinline></video>
+    <img class="card" src="iglesia/WhatsApp Image 2026-09-15 at 2.45.00 PM (1).jpeg" style="--i:9">
+    <img class="card" src="iglesia/WhatsApp Image 2026-09-15 at 2.45.00 PM.jpeg" style="--i:10">
+    <img class="card" src="iglesia/WhatsApp Image 2026-09-15 at 2.45.01 PM (2).jpeg" style="--i:9">
+    <img class="card" src="iglesia/WhatsApp Image 2026-09-19 at 7.29.37 PM.jpeg" style="--i:9">
+  </div>
+</div>
+
+    <!-- CONTENEDOR PRINCIPAL (MAIN A LA IZQUIERDA Y SIDEBAR A LA DERECHA) -->
+    <div class="flex flex-col lg:flex-row gap-6 w-full">
+
+        <!-- LEFT MAIN CANVAS: Lluvia de Ideas Mind Map (Historia del Café) -->
+        <main class="flex-1 relative bg-white/60 rounded-3xl p-4 md:p-8 border-2 border-gray-200 shadow-sm flex flex-col items-center justify-center min-h-[750px] overflow-hidden">
+            
+            <!-- Central Title Header -->
+            <div class="relative z-10 text-center my-6">
+                <!-- Lightbulb Graphic -->
+                <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 text-yellow-400 drop-shadow-[0_0_12px_rgba(250,204,21,0.6)] animate-pulse">
+                    <svg class="w-14 h-14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2a7 7 0 00-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 00-7-7zM9 21a1 1 0 001 1h4a1 1 0 001-1v-1H9v1z"/>
+                    </svg>
+                </div>
+
+                <!-- Title Box -->
+                <div class="bg-yellow-300 border-4 border-black px-8 py-3 rounded-full sketch-box transform rotate-1 inline-block mt-4 shadow-lg">
+                    <h2 class="font-display text-3xl md:text-5xl font-extrabold tracking-wider text-black">
+                        La Iglesia Santa Bárbara 
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Mind Map Grid Container -->
+            <div class="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 my-auto relative z-10 p-2">
+
+                <!-- IDEA 1: GREEN (Los Corredores) -->
+                <div class="card-container h-[340px] cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#059669] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#059669] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm"></span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Durante su Historia</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                Rubio ha sido un pueblo marcado por su fé católica. Y uno de estos testimonios es el Templo de Santa Bárbara.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#059669] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="Iglesia/Frente.jpeg" class="w-full h-full object-cover rounded-xl opacity-90">
+                            <span class="absolute bottom-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full font-display">Iglesia Santa Barbara</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 2: YELLOW/AMBER (Los Alemanes) -->
+                <div class="card-container h-[340px] cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#d97706] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#d97706] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm"></span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Este Templo</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                Es único en su estilo y representa una expresión máxima de la solidaridad de la gente, pues fue construido mediante la limosna de la gente.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#d97706] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="Iglesia/I8.jpeg" alt="Comercio alemán" class="w-full h-full object-cover rounded-xl opacity-90">
+                            <span class="absolute bottom-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full font-display">Construcción de una de las torres de Aguja</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 3: BLUE (Las cargas Aprobadas) -->
+                <div class="card-container h-[340px] cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#2563eb] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#2563eb] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm"></span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Los Origenes</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-base font-semibold leading-snug">
+                                Don Gervasio Rubio, considerado fundador del pueblo, construyó la primera capilla rudimentaria de tierra pisada y teja a finales del siglo XVIII.
+                                Es importante señalar que ya existía un templo primigenio que funcionaba en la zona de Pueblo Viejo y La Palmita, pero, debido al crecimiento demográfico y las precariedades de los materiales originales surgio la necesidad de uno mayor.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#2563eb] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="iglesia/I7.jpeg" alt="Cargas de café" class="w-full h-full object-cover rounded-xl opacity-90">
+                            <span class="absolute bottom-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full font-display">Fachada del Templo que exitía antes de la remodelación</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 6: MAGENTA / PINK (Distribución de cargas) -->
+                <div class="card-container h-[340px] cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#c026d3] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#c026d3] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm"></span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Evolución Eclesiástica</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                La vice_parroquia inicial se erigió bajo la advocación de Santa Bárbara en 1810, impulsada por el prebítero Carlos Rubio Maldonado.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#c026d3] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <video src="iglesia/WhatsApp Video 2026-09-19 at 7.29.38 PM.mp4" alt="Cargas de café" class="w-full h-full object-cover rounded-xl opacity-90" autoplay muted loop playsinline>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 5: PURPLE (Su Exportación) -->
+                <div class="card-container h-[340px] cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#7c3aed] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#7c3aed] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm"></span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Intervención de los Dominicos</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                En 1926, por iniciativa de Monseñr San Miguel y la orden de los Predicadores (Dominicos Españoles) se proyectó un templo de gran envergadura artística y arquitectónica inspirada en modelos europeos y santuarios de Bogota.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#7c3aed] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="iglesia/I6.jpeg" alt="Exportación de café" class="w-full h-full object-cover rounded-xl opacity-90">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 4: ORANGE (El primer camino) -->
+                <div class="card-container h-[340px] cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#ea580c] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#ea580c] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm"></span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">La primera piedra</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                Se ejecutó solemnemente el 02 de febrero de 1934, bajo la administración técnica del arquitecto Padre Hugoo Orjuela y el Padre Jesús Castañeda..
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#ea580c] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="iglesia/I5.jpeg" alt="Carretera andina" class="w-full h-full object-cover rounded-xl opacity-90">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 1: GREEN (Los Corredores) -->
+                <div class="card-container h-[340px] cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#059669] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#059669] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm"></span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Los Diseños</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                Estructura general de corte gótico ecléctico con muros de ladrillo cocido macizo fabricado en alfarerías locales (como la Tejería Venecia).
+                                Uso de cúpula central de alta resistencia con columnas cilíndricas perimetrales y refuerzos de mampostería tradicional ("mezcla real" de arena, cal y bosta en etapas iniciales).
+                                Incorporación posterior de sistemas de andamiaje y poleas industriales durante las etapas de culminación de torres y cúpula.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#059669] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="iglesia/I11.jpeg" class="w-full h-full object-cover rounded-xl opacity-90">
+                            <span class="absolute bottom-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full font-display">Distribución de la Planta</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 2: YELLOW/AMBER (Los Alemanes) -->
+                <div class="card-container h-[340px] cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#d97706] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#d97706] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm"></span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Parámetros Técnicos y Arquitectónicos</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                Longitud total aproximadamente 77 metros en su eje mayor (incluye prebisterio y sacristía).
+                                Altura de las torres principales que asciende a unos 50 metros.
+                                Cúpula central mnumental que alcanza los 40 metros de altura.
+                                Su parte central tiene hasta 18 metros de altura y navres laterales de 15 metros.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#d97706] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="Iglesia/I9.jpeg" alt="Comercio alemán" class="w-full h-full object-cover rounded-xl opacity-90">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 3: BLUE (Las cargas Aprobadas) -->
+                <div class="card-container h-[340px] cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#2563eb] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#2563eb] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm"></span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Distribución Espacial</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-base font-semibold leading-snug">
+                                Planta de cruz nativa con 3 naves principales, separadas por columnas de orden clásico, acompañadas por 8 capillas laterales de dimensiones asimétricas pero simetría visual equilibrada.
+                                Y la cantidad de 42 vitrales en su interior.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#2563eb] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <video src="iglesia/WhatsApp Video 2026-09-19 at 7.29.37 PM.mp4" alt="Cargas de café" class="w-full h-full object-cover rounded-xl opacity-90" autoplay muted loop playsinline>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IDEA 5: PURPLE (Su Exportación) -->
+                <div class="card-container h-[340px] cursor-pointer">
+                    <div class="card-inner">
+                        <div class="card-front text-[#7c3aed] sketch-double-border p-4 bg-white flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="w-8 h-8 rounded-full bg-[#7c3aed] text-white flex items-center justify-center font-bold font-display text-lg shadow-sm"></span>
+                                <h3 class="font-display font-extrabold text-lg tracking-wide uppercase text-gray-800">Componentes Litúrgicos Internos</h3>
+                            </div>
+                            <p class="font-handwritten text-gray-700 text-lg font-semibold leading-snug">
+                                Presbiterio elevado con altar central visible, ambón adaptado a la normativa litúrgica, pila bautismal tradicional y una extensa colección de vitrales temáticos donados por familias de la comunidad rubiense.
+                            </p>
+                        </div>
+                        <div class="card-back bg-[#7c3aed] sketch-double-border p-2 flex items-center justify-center overflow-hidden rounded-2xl relative">
+                            <img src="iglesia/I10.jpeg" alt="Exportación de café" class="w-full h-full object-cover rounded-xl opacity-90">
+                            <span class="absolute bottom-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full font-display">Pila Bautismal</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>    
+
+        </main>
+
+        <!-- RIGHT SIDEBAR: Datos Curiosos (Ahora a la derecha) -->
+        <aside class="w-full lg:w-[380px] shrink-0 bg-[#eee8db] rounded-3xl p-5 border-2 border-[#dcd4c3] shadow-lg flex flex-col max-h-[calc(100vh-12rem)] overflow-y-auto custom-scroll">
+            
+            <!-- Badge Header -->
+            <div class="bg-[#d946ef] text-white py-3 px-6 rounded-2xl shadow-md text-center mb-6 border-2 border-pink-600 transform -rotate-1">
+                <h1 class="font-handwritten text-3xl font-bold tracking-wide">Datos Curiosos</h1>
+            </div>
+
+            <!-- Section 1: Atajos esenciales -->
+            <div class="mb-6">
+                <h2 class="font-display font-semibold text-gray-800 text-lg mb-3 flex items-center gap-2">
+                    ¿Sabías Qué?
+                </h2>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white p-3 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                        <h3 class="font-bold text-xs text-gray-700">¿Sabías Qué?</h3>
+                        <p class="text-[11px] text-gray-500 my-1 leading-tight">El poblamiento inicial de Rubio cuenta con una trayectoria esquematizada en fases evolutivas que van desde comunidades indígenas locales (Carapos, Canias, Quenemaries y los Cuquies) hasta las encomiendas de la época colonial.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <video src="iglesia/WhatsApp Video 2026-09-19 at 7.29.38 PM.mp4" alt="Café histórico" class="rounded-xl w-full object-cover" autoplay muted loop playsinline></video>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- SECCIÓN INFERIOR: Cuadro de texto y Carrusel -->
+    <div class="parrafo w-full text-center my-4">
+        <p class="font-display text-lg text-gray-700">Estos fue parte de la estructura, que se tenía planteada para este proyecto</p>
+    </div>
+
+    <section id="carrusel-contenedor" class="w-full">
+        <div class="mi-carrusel-puro">
+            <div class="carrusel-track-puro" id="menuCarouselPuro">
+                <div class="carrusel-item-puro active">
+                    <img src="iglesia/I1.jpeg" alt="Imagen 1">    
+                </div>
+                <div class="carrusel-item-puro">
+                    <img src="iglesia/I2.jpeg" alt="Imagen 2">
+                </div>
+                <div class="carrusel-item-puro">
+                    <img src="iglesia/I3.jpeg" alt="Imagen 3">
+                </div>
+                <div class="carrusel-item-puro">
+                    <img src="iglesia/I4.jpeg" alt="Imagen 4">
+                </div>
+                <div class="carrusel-item-puro">
+                    <img src="iglesia/I5.jpeg" alt="Imagen 5">
+                </div>
+                <div class="carrusel-item-puro">
+                    <img src="iglesia/I6.jpeg" alt="Imagen 6">
+                </div>
+                <div class="carrusel-item-puro">
+                    <img src="iglesia/I7.jpeg" alt="Imagen 7">
+                </div>
+                <div class="carrusel-item-puro">
+                    <img src="iglesia/I8.jpeg" alt="Imagen 8">
+                </div>
+                <div class="carrusel-item-puro">
+                    <img src="iglesia/I9.jpeg" alt="Imagen 9">
+                </div>
+                <div class="carrusel-item-puro">
+                    <img src="iglesia/I10.jpeg" alt="Imagen 10">
+                </div>
+                <div class="carrusel-item-puro">
+                    <img src="iglesia/I11.jpeg" alt="Imagen 11">
+                </div>
+                <div class="carrusel-item-puro">
+                    <img src="iglesia/I12.jpeg" alt="Imagen 12">
+                </div>
+                <div class="carrusel-item-puro">
+                    <img src="iglesia/I13.jpeg" alt="Imagen 13">
+                </div>
+                <div class="carrusel-item-puro">
+                    <img src="iglesia/I14.jpeg" alt="Imagen 14">
+                </div>
+                
+                
+            </div>
+            
+            <!-- Indicadores visuales -->
+            <div class="carrusel-puntos">
+                <span class="punto activo" onclick="irASlide(0)"></span>
+                <span class="punto" onclick="irASlide(1)"></span>
+                <span class="punto" onclick="irASlide(2)"></span>
+                <span class="punto" onclick="irASlide(3)"></span>
+                <span class="punto" onclick="irASlide(4)"></span>
+                <span class="punto" onclick="irASlide(5)"></span>
+                <span class="punto" onclick="irASlide(6)"></span>
+                <span class="punto" onclick="irASlide(7)"></span>
+                <span class="punto" onclick="irASlide(8)"></span>
+                <span class="punto" onclick="irASlide(9)"></span>
+                <span class="punto" onclick="irASlide(10)"></span>
+                <span class="punto" onclick="irASlide(11)"></span>
+                <span class="punto" onclick="irASlide(12)"></span>
+                <span class="punto" onclick="irASlide(13)"></span>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTÓN PARA REGRESAR AL INICIO -->
+<div class="w-full flex justify-center my-8">
+    <a href="../index.html" class="flex items-center gap-2 bg-[#5c6b24] hover:bg-[#1e2e13] text-[#d8c253] font-display font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 border-[#d8c253]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        Regresar al Inicio
+    </a>
+</div>
+
+    <script src="js/iglesia.js"></script>
+    <script src="js/audios.js"></script>
+    <script src="js/carrusel2.js"></script>
+</body>
+</html>

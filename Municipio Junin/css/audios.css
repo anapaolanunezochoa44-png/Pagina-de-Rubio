@@ -1,0 +1,34 @@
+/* Estilos para el botón flotante de audio */
+.audio-control {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff3ed;
+    transition: background 0.3s ease, transform 0.2s ease;
+    backdrop-filter: blur(5px);
+}
+
+.audio-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+}
+
+.audio-control svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Clase utilitaria para ocultar el ícono inactivo */
+.oculto {
+    display: none !important;
+}
